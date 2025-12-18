@@ -1,0 +1,29 @@
+[project]
+name = "youtube-downloader-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aerich>=0.9.2",
+    "aiosqlite<0.22.0",
+    "fastapi[standard]>=0.125.0",
+    "pytubefix>=10.3.6",
+    "tortoise-orm>=0.25.2",
+]
+
+
+
+[tool.aerich]
+
+tortoise_orm = "src.settings.TORTOISE_ORM"
+
+location = "./migrations"
+
+src_folder = "./."
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.407",
+]
+
