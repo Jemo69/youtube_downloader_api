@@ -9,7 +9,10 @@ dependencies = [
     "aiosqlite<0.22.0",
     "bcrypt>=5.0.0",
     "fastapi[standard]>=0.125.0",
+    "pydantic[email]>=2.12.5",
+    "pyjwt>=2.10.0",
     "pytubefix>=10.3.6",
+    "slowapi>=0.1.9",
     "tortoise-orm>=0.25.2",
 ]
 
